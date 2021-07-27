@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" sizes="512x512" href="/img/android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
     <link href="./Assets/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -21,7 +21,7 @@
 
 
 <body class="bg-white">
-    <header class="header">
+    <header class="header bg-dark bg-gradient">
         <div class="roleMenu mx-auto">
             <svg xmlns="http://www.w3.org/2000/svg" class="bi-facebook text-center" viewBox="0 0 16 16">
                 <path
@@ -30,9 +30,19 @@
         </div>
     </header>
     <div class="container">
-        <div class="formulary">
+        <div class="formulary bg-light">
+            <div class="insc">
+                <h2 class="h2">Cadastre-se
+                </h2>
+                <blockquote class="blockquote">
+                    <p>
+                        É fácil e grátis!
+                    </p>
+                </blockquote>
+            </div>
+
             <form class="row g-3">
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <label for="validationDefault01" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="validationDefault01" value="" required>
                 </div>
@@ -40,7 +50,7 @@
                     <label for="validationDefault02" class="form-label">Sobrenome</label>
                     <input type="text" class="form-control" id="validationDefault02" value="" required>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <label for="validationDefaultUsername" class="form-label">Usuário</label>
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend2">@</span>
@@ -48,24 +58,33 @@
                             aria-describedby="inputGroupPrepend2" required>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
+                    <label for="validationDefault05" class="form-label">Cep</label>
+                    <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+                <div class="col-md-6">
                     <label for="validationDefault03" class="form-label">Cidade</label>
                     <input type="text" class="form-control" id="validationDefault03" required>
                 </div>
                 <div class="col-md-5">
-                    <label for="validationDefault04" class="form-label">Estado</label>
-                    <select class="form-select" id="validationDefault04" required>
+                    <label for="validationDefault04 class=" form-label">Estado</label>
+                    <select class="form-select" id="" required>
                         <option selected disabled value="">Escolha uma estado..</option>
                         <option>...</option>
                     </select>
                 </div>
-                <div class="col-md-3">
-                    <label for="validationDefault05" class="form-label">Cep</label>
+                <div class="col-md-5">
+                    <label for="validationDefault05" class="form-label">E-mail</label>
                     <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefault05">Password</label>
+                    <input type="password" class="form-control" id="validationDefault05">
+
                 </div>
                 <div class="col-12">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <input class="form-check-input " type="checkbox" value="" id="invalidCheck2" required>
                         <label class="form-check-label" for="invalidCheck2">
                             Aceito os termos e condiçoes.
                         </label>
@@ -74,6 +93,7 @@
                 <div class="col-12">
                     <button class="btn btn-primary" type="submit">Enviar dados</button>
                 </div>
+
             </form>
         </div>
     </div>
@@ -83,7 +103,7 @@
     </div>
     </div>
 </body>
-<footer class="footer">
+<footer class="footer bg-dark bg-gradient">
     <nav class="navbar-toogler">
         <h2 class="conceptBy text-end">Conceito por Yan Felipy |</h2>
         <div class="socialBar">
