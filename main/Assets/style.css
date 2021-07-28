@@ -1,4 +1,5 @@
 * {
+  margin: 0;
   user-select: none;
   overflow: hidden;
 }
@@ -305,8 +306,7 @@
 @media (max-width: 900px) {
   .container {
     display: flex;
-    overflow-y: hidden;
-  }
+      }
 
   .imgCard {
     visibility: hidden;
