@@ -4,36 +4,32 @@
   overflow: hidden;
 }
 
-.body {
-  margin: 0;
-  display: flex;
-}
 
 .container {
-  width: 100%;
-  height: 100%;
-  display: block;
-  flex-direction: column;
+  
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-
+  position: absolute;
+ 
+  
 }
 
 .enterRedeSocial {
-  display: block;
+  top: 3rem;
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   height: 80vh;
-  position: absolute;
-  top: 4rem;
-  bottom: 5rem;
-  left: 6rem;
-  right: 6rem;
+  position: relative;
   z-index: 40;
   margin: 0 auto;
   border-radius: 1.5%;
   background-color: rgb(255, 255, 255);
   padding: 1%;
+
 }
 
 .box-login {
@@ -53,7 +49,7 @@
 }
 
 .cardLogin {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -62,8 +58,15 @@
   z-index: 60;
   top: 0;
   line-height: 0.3rem;
-  animation: topAnimation ease .9s
-}
+  animation: topAnimation ease .9s;
+  
+  border-style: solid;
+  border-bottom-width: 0.1rem ;
+  border-right-width: 0rem;
+  border-left-width: 0rem;
+  border-top-width: 0rem;
+  
+  }
 
 .h2 {
   display: flex;
@@ -82,27 +85,30 @@
 }
 
 
-.cardLogin blockquote {
+.blockquote {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 3.5rem;
+  top: 3.8rem;
   z-index: 80;
   width: 100%;
   height: 6rem;
-  position: relative;
-  color: darkgrey;
+  position: absolute;
+  color: rgb(128, 128, 128);
+  
 
 }
 
-.cardLogin blockquote p {
+.blockquote p {
   text-align: center;
   margin: 2%;
   width: 100%;
-  margin: 1px;
-  height: 6vh;
+  top: 0.1rem;
+  padding: 1%;
+  height: 5vh;
   font-size: 1.1rem;
-  position: relative;
+  position: absolute;
+  
 
 }
 
@@ -111,44 +117,83 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0;
+  align-items: center;
   position: absolute;
   z-index: 50;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
+  
+   
 }
 
-.form-floating {
-  margin: 1rem 1.5rem;
-
+.form-login {
+  width: 100%;
+  height: 70vh;
+  margin-top: 2.6rem;
+  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+    
 }
-
+.form-floating-master {
+  margin-top: 4%;
+  width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30%;
+    }
+.form-floating{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+ 
 .signUp {
-  margin: 3% 14%;
-  width: 70%;
+  margin: 1% 10%;
+  width: 100%;
+  height: 6vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2%;
+ 
+  
+  
 }
 
-.btn {
-  width: 100%;
-  border-radius: 2%
+.signUp button {
+  width: 60%;
+  display: flex
+  ;
+  justify-content: center;
+  align-items: center;
 }
 
 .checkLogin {
-  margin: 2% 14%;
-  width: 70%;
+  margin: 1% 10%;
+  width: 100%;
+  height: 6vh;
   display: flex;
   align-items: center;
-
   justify-content: center;
-  border-radius: 2%;
+ 
+  
+  
+}
+.checkLogin button{
+width: 60%;
+
 }
 
 .divLogin {
+  margin-top: 7%;
   text-align: center;
+  height: 20%;
 
 }
 
@@ -159,7 +204,9 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
   cursor: pointer;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -172,29 +219,36 @@
 
 }
 
+
 .imgCard {
+  width: 50%;
+  min-height: 60vh ;
+  position :absolute;
   top: 5rem;
   right: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 30;
-  width: 50%;
-  height: 60vh;
+  
   animation: mainAnimation ease 1s;
+  
 }
 
 .facebook3d {
   width: 100%;
+  min-height: 60vh;
   display: flex;
+  position: relative;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 60vh;
+  height: 100vh;
   opacity: 100%;
   filter: brightness(105%);
+
+  
+  
 }
 
 
@@ -211,7 +265,7 @@
 }
 
 .navbar-toogler {
-  margin-left: 13%;
+  margin-left: 20%;
   padding: 1rem;
   width: 100%;
   height: 7vh;
@@ -234,7 +288,6 @@
   color: #FFF;
   overflow: hidden;
 
-
 }
 
 .socialBar {
@@ -248,22 +301,28 @@
 
 .linkedin {
   overflow: hidden;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 .github {
   overflow: hidden;
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 .fab {
-  font-size: 1.8rem;
-  width: 1.8rem;
+  font-size: 2.2rem;
+  width: 2.8rem;
   height: 5vh;
   color: white;
   overflow: hidden;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.508);
 }
+
+.imgCard2 {
+  visibility: hidden;
+}
+
+/* key frames animations */
 
 @keyframes mainAnimation {
   0% {
@@ -296,33 +355,41 @@
   }
 }
 
-.imgCard2 {
-  visibility: hidden;
-}
-
-
-/* media queries */
+/* media queries devices */
 
 @media (max-width: 900px) {
+  .body {
+    display: flex;
+       
+  }
   .container {
     display: flex;
-      }
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: row;
+    position: absolute;
+    margin: 0 auto;
+    
+    
+  }
 
   .imgCard {
     visibility: hidden;
-
 
   }
 
   .facebook3d {
     width: 100%;
-    height: 35vh;
-    display: flex;
+    min-height: 5vh;
+    height: auto;
+    max-height: 30;
+    display: block;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     border: none;
-
+    
 
   }
 
@@ -334,61 +401,136 @@
     visibility: visible;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     width: 80%;
-    height: 35vh;
+    height: 28vh;
     position: absolute;
-    z-index: 20;
-    margin: 0 auto;
-    border-radius: 1%;
+    z-index: 100;   
     animation: topAnimation ease 2s;
 
   }
 
+
   .enterRedeSocial {
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 180vh;
+    height: 100vh;
     position: absolute;
-    z-index: 40;
-    top: 0rem;
-    left: 0rem;
-    right: 0rem;
-    margin: 0 auto;
-    border-radius: 1%;
-    background-color: rgb(255, 255, 255);
-    padding: 1%;
+    z-index: 1100;
+      border-radius: 1%;
+    background-color: #ffffff00;
+    
+
   }
 
   .login {
+    top: 3rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    columns: auto;
-    width: auto;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: 80;
 
   }
 
   .box-login {
     display: flex;
     justify-content: center;
-    width: 80%;
-    height: 90vh;
+    width: 95%;
+    height: 95vh;
     position: absolute;
     z-index: 50;
-    top: 1rem;
-    left: 3rem;
-    right: 3rem;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
     margin: 0 auto;
-    border-radius: 1%;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.200);
-    background-color: rgb(255, 255, 255);
-    padding: 1%;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.576);
     animation: bottomAnimation ease-in-out 2s;
   }
 
+  .form-floating-master{
+    width: 100%;
+    height: 30vh;
+    
+    padding: 7% 0%;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 900;
+    
+
+
+  }
+  .form-floating {
+    width: 100%;
+    height: 30vh;
+    font-size: 0.9rem;
+    margin: 0.2% 0%;
+    position: absolute;
+    z-index: 900;
+
+  }
+
+.checkLogin button {
+  width: 100%;
+}
+
+  .signUp button {
+    width: 100%;
+  }
+  
+
+
   .cardLogin {
     visibility: hidden;
+    z-index: 2;
   }
 }
+
+
+@media (min-height: 562px) {
+  .imgCard {
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .facebook3d {
+    height: 28vh;
+    z-index: 5;
+  }
+
+  .login {
+    top: 8%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .enterRedeSocial {
+    top: 2rem;
+    width: 90%;
+    height: 80vh;
+    position: absolute;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+        
+  }
+  
+}
+ 
+
