@@ -1,23 +1,10 @@
-# template-rede-social
-Conceito de página web utilizando HTML, Bootsrap, CSS. Podendo ser adaptada a qualquer rede social. 
 
-* Commits relevantes:
-
-- 1 : Criação da página de inscrição e estilo da página.
-
-- 2 : Aperfeiçoamento do estilo da página de inscrição e responsividade da página.
-
-- 3 : Aperfeiçoamento na responsividade da página de inscrição, criação da página de login já estilizada e com botões para redirecionamento entre elas.
-
-- 4 : Aperfeiçoamento na responsividade da página de login.
-
-# Página Web Conceitual (template) 
-[![NPM](https://github.com/YanFelipy/template-rede-social/blob/master/LICENSE)
+# Página Web Conceitual (ex-facebook) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/YanFelipy/template-rede-social/blob/master/LICENSE)
 
 # Sobre o projeto
-
-   Meu primeiro projeto completo em CSS & HTML totalmente responsivo, teve como objetivo me auxiliar no aprendizado das propriedades e também no uso das tecnologias citadas. 
-    Uma página conceitual com formulário de inscrição e entrada na possível rede social, com apenas o mecanismo padrão de redirecionamento de páginas entre si, sendo elas a página de inicial(login) e página de inscrição(sign up).
+   Meu primeiro projeto completo em CSS & HTML totalmente responsivo, teve como objetivo me auxiliar no aprendizado das propriedades e também no uso das tecnologias citadas abaixo. 
+    Uma página conceitual do Facebook, com formulário de inscrição e entrada na possível rede social, com apenas o mecanismo padrão de redirecionamento de páginas entre si, sendo elas a página de inicial(login) e página de inscrição(sign up).
 
 ## Layout mobile (Login & Sign Up)
 ![Mobile 1](https://github.com/YanFelipy/template-rede-social/blob/master/main/img/screenshots-web/versao-mobile-iphonex.png) ![Mobile 2](https://github.com/YanFelipy/template-rede-social/blob/master/inscription/img/screenshots-web/versao-mobile-iphone-x.png)
@@ -27,8 +14,9 @@ Conceito de página web utilizando HTML, Bootsrap, CSS. Podendo ser adaptada a q
 
 ![Web 2](https://github.com/YanFelipy/template-rede-social/blob/master/inscription/img/screenshots-web/versao-desktop.png)
 
-## Página de Login com animações
+## Página de Login  & Sigin Up com animações
 ![Modelo Conceitual](https://media.giphy.com/media/fdr3RKjKB5jeTefkuT/giphy.gif)
+![Modelo Conceitual2](https://media.giphy.com/media/cO16T6K1EEQeVQGXqL/giphy.gif)
 
 # Tecnologias utilizadas
 ## Front end
