@@ -6,14 +6,11 @@
 
 
 .container {
-  
   min-width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: absolute;
- 
-  
 }
 
 .enterRedeSocial {
@@ -59,14 +56,12 @@
   top: 0;
   line-height: 0.3rem;
   animation: topAnimation ease .9s;
-  
   border-style: solid;
-  border-bottom-width: 0.1rem ;
+  border-bottom-width: 0.1rem;
   border-right-width: 0rem;
   border-left-width: 0rem;
   border-top-width: 0rem;
-  
-  }
+}
 
 .h2 {
   display: flex;
@@ -81,7 +76,6 @@
   font-size: 2.0em;
   color: rgb(0, 0, 0);
   text-shadow: 0px 0px 0.2px rgba(0, 0, 0, 0.33);
-
 }
 
 
@@ -95,8 +89,6 @@
   height: 6rem;
   position: absolute;
   color: rgb(128, 128, 128);
-  
-
 }
 
 .blockquote p {
@@ -108,8 +100,6 @@
   height: 5vh;
   font-size: 1.1rem;
   position: absolute;
-  
-
 }
 
 .login {
@@ -122,8 +112,6 @@
   z-index: 50;
   width: 100%;
   height: 65vh;
-  
-   
 }
 
 .form-login {
@@ -135,25 +123,25 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
-    
 }
+
 .form-floating-master {
   margin-top: 4%;
   width: 90%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 30%;
-    }
-.form-floating{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+}
+
+.form-floating {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   margin: 0;
 }
- 
+
 .signUp {
   margin: 1% 10%;
   width: 100%;
@@ -161,15 +149,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  
-  
 }
 
 .signUp button {
   width: 60%;
-  display: flex
-  ;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -181,12 +165,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  
-  
 }
-.checkLogin button{
-width: 60%;
+
+.checkLogin button {
+  width: 60%;
 
 }
 
@@ -222,17 +204,16 @@ width: 60%;
 
 .imgCard {
   width: 50%;
-  min-height: 60vh ;
-  position :absolute;
+  min-height: 60vh;
+  position: absolute;
   top: 5rem;
   right: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
   animation: mainAnimation ease 1s;
-  
+
 }
 
 .facebook3d {
@@ -246,9 +227,6 @@ width: 60%;
   height: 100vh;
   opacity: 100%;
   filter: brightness(105%);
-
-  
-  
 }
 
 
@@ -360,8 +338,9 @@ width: 60%;
 @media (max-width: 900px) {
   .body {
     display: flex;
-       
+
   }
+
   .container {
     display: flex;
     justify-content: center;
@@ -370,8 +349,8 @@ width: 60%;
     flex-direction: row;
     position: absolute;
     margin: 0 auto;
-    
-    
+
+
   }
 
   .imgCard {
@@ -389,7 +368,7 @@ width: 60%;
     align-content: center;
     flex-direction: column;
     border: none;
-    
+
 
   }
 
@@ -405,7 +384,7 @@ width: 60%;
     width: 80%;
     height: 28vh;
     position: absolute;
-    z-index: 100;   
+    z-index: 100;
     animation: topAnimation ease 2s;
 
   }
@@ -423,9 +402,9 @@ width: 60%;
     height: 100vh;
     position: absolute;
     z-index: 1100;
-      border-radius: 1%;
+    border-radius: 1%;
     background-color: #ffffff00;
-    
+
 
   }
 
@@ -459,18 +438,15 @@ width: 60%;
     animation: bottomAnimation ease-in-out 2s;
   }
 
-  .form-floating-master{
+  .form-floating-master {
     width: 100%;
     height: 30vh;
-    
     padding: 7% 0%;
     font-size: 0.9rem;
     position: relative;
     z-index: 900;
-    
-
-
   }
+
   .form-floating {
     width: 100%;
     height: 30vh;
@@ -478,17 +454,16 @@ width: 60%;
     margin: 0.2% 0%;
     position: absolute;
     z-index: 900;
-
   }
 
-.checkLogin button {
-  width: 100%;
-}
+  .checkLogin button {
+    width: 100%;
+  }
 
   .signUp button {
     width: 100%;
   }
-  
+
 
 
   .cardLogin {
@@ -504,7 +479,6 @@ width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   .facebook3d {
@@ -528,9 +502,7 @@ width: 60%;
     display: flex;
     justify-content: center;
     align-self: center;
-        
-  }
-  
-}
- 
 
+  }
+
+}
